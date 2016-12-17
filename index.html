@@ -88,13 +88,25 @@
   <tr>
     <td class="tg-f6td" colspan="4">Mejora Continua del Servicio</td>
   </tr>
+  <tr>
+    <td class="tg-5xqe"></td>
+    <td class="tg-5xqe"></td>
+    <td class="tg-5xqe"></td>
+    <td class="tg-5xqe"></td>
+  </tr>
+  <tr>
+    <td class="tg-5xqe" id="KB">KB</td>
+    <td class="tg-5xqe" id="CMDB">CMDB</td>
+    <td class="tg-5xqe"></td>
+    <td class="tg-5xqe"></td>
+  </tr>
 </table>
 </div>
   </body>
 <script type="text/javascript">
   $("#CentroServicios").tipsy({gravity:$.fn.tipsy.autoNS,opacity:1,html:true, 
       title: function() {
-        tooltp =("<p>Centro neurálgico de todos los procesos de soporte al servicio:</p><ul><li>Registrar y monitorizar incidentes</li></ul><ul><li>Aplicar soluciones temporales a errores conocidos en colaboración con la gestión de problemas</li></ul><ul><li>Colaborar con la Gestión de Configuraciones para la actualización de la CMDB</li></ul><ul><li>Gestionar cambios solicitados vía peticiones de servicio en colaboración con la gestión de Cambios y Versiones</li></ul>");
+        tooltp =("<h3>Centro de Servicios</h3><p>Centro neurálgico de todos los procesos de soporte al servicio:</p><ul><li>Registrar y monitorizar incidentes</li></ul><ul><li>Aplicar soluciones temporales a errores conocidos en colaboración con la gestión de problemas</li></ul><ul><li>Colaborar con la Gestión de Configuraciones para la actualización de la CMDB</li></ul><ul><li>Gestionar cambios solicitados vía peticiones de servicio en colaboración con la gestión de Cambios y Versiones</li></ul>");
         return tooltp
       }
   });
@@ -161,6 +173,18 @@
   $("#CatalogoServicios").tipsy({gravity:$.fn.tipsy.autoNS,opacity:1,html:true, 
       title: function() {
         tooltp =("<h3>Catálogo de Servicios:</h3><ul><li>Describir el servicio considerando los SLA ofrecidos</li></ul><ul><li>Un nuevo servicio actualizará la planificación de la Gestión de Niveles de Servicio</li></ul>");
+        return tooltp
+      }
+  });
+  $("#KB").tipsy({gravity:$.fn.tipsy.autoNS,opacity:1,html:true, 
+      title: function() {
+        tooltp =("<h3>Base de Conocimiento:</h3><p>Debe recoger toda la información necesaria para:</p><ul><li>Ofrecer una primera línea de soporte ágil y eficaz sin necesidad de recurrir a escalados</li></ul><ul><li>Realizar una tarea comercial y de soporte al negocio</li></ul>");
+        return tooltp
+      }
+  });
+  $("#CMDB").tipsy({gravity:$.fn.tipsy.autoNS,opacity:1,html:true, 
+      title: function() {
+        tooltp =("<h3>Base de Datos de Configuraciones:</h3><ul><li>Información detallada de cada elemento de configuración (CI) (Lógico y Físico)</li></ul><ul><li>Interrelaciones entre diferentes elementos de configuración. Ej: Dependencias lógicas o físicas</li></ul>");
         return tooltp
       }
   });
