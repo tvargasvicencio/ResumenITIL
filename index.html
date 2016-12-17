@@ -204,5 +204,23 @@
         return tooltp
       }
   });
+  $("#DSL").tipsy({gravity:$.fn.tipsy.autoNS,opacity:1,html:true, 
+      title: function() {
+        tooltp =("<h3>Biblioteca de Software Definitivo:</h3><p>Debe contener copia de todo el software instalado en el entorno TI. Incluye SO, App y controladores de dispositivos y documentación asociada</p><ul><li>Debe contener el histórico completo de versiones de un mismo software para proporcionar la versión necesaria en caso de que se deban implementar los planes de back-out</li></ul><ul><li>Debe ser almacenada en un entorno seguro y es conveniente que se realicen back-up periódicos</li></ul>");
+        return tooltp
+      }
+  });
+  $("#DHS").tipsy({gravity:$.fn.tipsy.autoNS,opacity:1,html:true, 
+      title: function() {
+        tooltp =("<h3>Depósito de Hardware Definitivo:</h3><p>Contiene piezas de repuesto para los CIs en el entorno de producción</p><br><br><p>Los activos almacenados deben incorporarse a la CMDB en e caso de que los CIs correspondientes se hallen registrados en la misma</p>");
+        return tooltp
+      }
+  });
+  $("#CDB").tipsy({gravity:$.fn.tipsy.autoNS,opacity:1,html:true, 
+      title: function() {
+        tooltp =("<h3>Base de Datos de Capacidad:</h3><p>Base de datos en la que se registra:</p><ul><li>Planes de capacidad</li></ul><ul><li>Auditorías de Capacidad</li></ul><ul><li>Informes de rendimiento</li></ul>");
+        return tooltp
+      }
+  });
 </script>
 </html>
