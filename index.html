@@ -5,6 +5,16 @@
     <script type='text/javascript' src='js/jquery.tipsy.js'></script>
     <link rel="stylesheet" href="css/tipsy.css" type="text/css" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-89141758-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
   </head>
   <body>
 <div class="container">
@@ -109,6 +119,24 @@
   $("#GVersiones").tipsy({gravity:$.fn.tipsy.autoNS,opacity:1,html:true, 
       title: function() {
         tooltp =("<h3>Gestión de Versiones:</h3><p>Permite una visión integral de los cambios para asegurar que en su implantación se hagan las pruebas necesarias y se consideren tanto los aspectos técnicos como los no técnicos de la liberación. Tiene como principales funciones:</p><ul><li>Implementar los cambios</li></ul><ul><li>Llevar a cabo reparaciones de emergencia</li></ul><ul><li>Desarrollar planes de roll-out y back-out</li></ul>");
+        return tooltp
+      }
+  });
+  $("#GConfiguracion").tipsy({gravity:$.fn.tipsy.autoNS,opacity:1,html:true, 
+      title: function() {
+        tooltp =("<h3>Gestión de la Configuración:</h3><p>Tiene como funciones principales:</p><ul><li>Llevar el control de todos los elementos de configuración de infraestructura TI</li></ul><ul><li>Realizar auditorías periódicas de configuración</li></ul><ul><li>Proporcionar información precisa sobre configuración TI a todos los diferentes procesos de gestión</li></ul>");
+        return tooltp
+      }
+  });
+  $("#admOp").tipsy({gravity:$.fn.tipsy.autoNS,opacity:1,html:true, 
+      title: function() {
+        tooltp =("<ul><li>Estudiante sin evaluar</li></ul>");
+        return tooltp
+      }
+  });
+  $("#admOp").tipsy({gravity:$.fn.tipsy.autoNS,opacity:1,html:true, 
+      title: function() {
+        tooltp =("<ul><li>Estudiante sin evaluar</li></ul>");
         return tooltp
       }
   });
