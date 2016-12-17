@@ -11,7 +11,7 @@
 .tg .tg-1x9o{background-color:rgba(0, 0, 0, 0);border-color: rgba(0, 0, 0, 0);text-align:center}
 .tg .tg-zedv{font-weight:bold;background-color:#036400;color:#efefef;text-align:center;vertical-align:top}
 .tg .tg-f6td{background-color:#ffcb2f;font-weight:bold;color:#000000;text-align:center;vertical-align:top}
-.container{width:700px;margin-left: 25%;margin-right: 25%;}
+.container{width:700px;margin:0px auto;}
 .tipsy-inner { max-width: 250px; }
 .tipsy { font-size: 14px; position: absolute; padding: 5px; z-index: 100000;}
 
