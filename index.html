@@ -45,7 +45,7 @@
   </tr>
   <tr>
     <td class="tg-5xqe"></td>
-    <td class="tg-baqh">Administración del Catálogo de Servicios</td>
+    <td class="tg-baqh" id="CatalogoServicios">Administración del Catálogo de Servicios</td>
     <td class="tg-baqh">Administración del Conocimiento</td>
     <td class="tg-baqh">Requerimientos y Peticiones</td>
   </tr>
@@ -158,9 +158,9 @@
         return tooltp
       }
   });
-  $("#admOp").tipsy({gravity:$.fn.tipsy.autoNS,opacity:1,html:true, 
+  $("#CatalogoServicios").tipsy({gravity:$.fn.tipsy.autoNS,opacity:1,html:true, 
       title: function() {
-        tooltp =("<ul><li>Estudiante sin evaluar</li></ul>");
+        tooltp =("<h3>Catálogo de Servicios:</h3><ul><li>Describir el servicio considerando los SLA ofrecidos</li></ul><ul><li>Un nuevo servicio actualizará la planificación de la Gestión de Niveles de Servicio</li></ul>");
         return tooltp
       }
   });
