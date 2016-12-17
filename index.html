@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
-	<head>
-    <script type='text/javascript' src='http://code.jquery.com/jquery-3.1.1.min.js'></script>
+  <head>
+    <script type='text/javascript' src='https://code.jquery.com/jquery-3.1.1.min.js'></script>
     <script type='text/javascript' src='js/jquery.tipsy.js'></script>
     <link rel="stylesheet" href="css/tipsy.css" type="text/css" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
-	</head>
-	<body>
+  </head>
+  <body>
 <div class="container">
 <table class="tg">
   <tr>
@@ -80,7 +80,7 @@
   </tr>
 </table>
 </div>
-	</body>
+  </body>
 <script type="text/javascript">
   $("#CentroServicios").tipsy({gravity:$.fn.tipsy.autoNS,opacity:1,html:true, 
       title: function() {
@@ -94,25 +94,25 @@
         return tooltp
       }
   });
-  $("#GProblemas").tipsy({gravity:$.fn.tipsy.autoNS,opacity:0.8,html:true, 
+  $("#GProblemas").tipsy({gravity:$.fn.tipsy.autoNS,opacity:1,html:true, 
       title: function() {
         tooltp =("<h3>Gestión de Problemas:</h3><p>Proceso responsable de identificar la causa raíz de los incidentes para evitar su repetición y minimizar el impacto sobre las operaciones del negocio</p><ul><li>Investigar causas subyacentes a toda alteración, real o potencial del servicio TI</li></ul><ul><li>Determinar posibles soluciones</li></ul><ul><li>Proponer las repeticiones de cambio (RFC)</li></ul><ul><li>Realizar revisiones Post Implementación (PIR) en colaboración con la Gestión de Cambios</li></ul>");
         return tooltp
       }
   });
-  $("#admOp").tipsy({gravity:$.fn.tipsy.autoNS,opacity:0.8,html:true, 
+  $("#GCambio").tipsy({gravity:$.fn.tipsy.autoNS,opacity:1,html:true, 
       title: function() {
-        tooltp =("");
+        tooltp =("<h3>Gestión de Cambios:</h3><p>Garantiza el uso de métodos estandarizados para la realización de cambios en la infraestructura, minimizando así el impacto de los incidentes relacionados con dichos cambios:</p><ul><li>Evaluar el impacto de los posibles cambios sobre la infraestructura TI</li></ul><ul><li>Tramitar los cambios mediante procesos y procedimientos estandarizados y consistentes</li></ul><ul><li>Revisar, junto a la Gestión de Problemas y los usuarios, los resultados Post Implementación (PIR)</li></ul>");
         return tooltp
       }
   });
-  $("#admOp").tipsy({gravity:$.fn.tipsy.autoNS,opacity:0.8,html:true, 
+  $("#admOp").tipsy({gravity:$.fn.tipsy.autoNS,opacity:1,html:true, 
       title: function() {
         tooltp =("<ul><li>Estudiante sin evaluar</li></ul>");
         return tooltp
       }
   });
-  $("#admOp").tipsy({gravity:$.fn.tipsy.autoNS,opacity:0.8,html:true, 
+  $("#admOp").tipsy({gravity:$.fn.tipsy.autoNS,opacity:1,html:true, 
       title: function() {
         tooltp =("<ul><li>Estudiante sin evaluar</li></ul>");
         return tooltp
