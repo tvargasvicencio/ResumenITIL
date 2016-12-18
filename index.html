@@ -80,10 +80,10 @@
     <td class="tg-j0tj" id="CentroServicios">Mesa de Servicios</td>
   </tr>
   <tr>
-    <td class="tg-zedv" id='itil1'>Estrategia del Servicio</td>
-    <td class="tg-ztyr" id='itil2'>Diseño del Servicio</td>
-    <td class="tg-eewd" id='itil3'>Transición del Servicio</td>
-    <td class="tg-y7d2" id='itil4'>Operación del Servicio</td>
+    <td class="tg-zedv">Estrategia del Servicio</td>
+    <td class="tg-ztyr">Diseño del Servicio</td>
+    <td class="tg-eewd">Transición del Servicio</td>
+    <td class="tg-y7d2">Operación del Servicio</td>
   </tr>
   <tr>
     <td class="tg-f6td" colspan="4" id="MejoraContinua">Mejora Continua del Servicio</td>
@@ -117,9 +117,9 @@
     <td class="tg-5xqe" id="SIP" onmouseover="asociar(['GNivelServicio'])" onmouseout="desasociar(['GNivelServicio'])">SIP</td>
   </tr>
   <tr>
-    <td class="tg-5xqe" id="ITIL" onmouseover="asociar(['MejoraContinua','itil1','itil2','itil3','itil4'])" onmouseout="desasociar(['MejoraContinua','itil1','itil2','itil3','itil4'])">ITIL</td>
+    <td class="tg-5xqe" id="ITIL">ITIL</td>
     <td class="tg-5xqe" id="ITILv2">ITILv2</td>
-    <td class="tg-5xqe" id="ITILv3" onmouseover="asociar(['MejoraContinua','itil1','itil2','itil3','itil4'])" onmouseout="desasociar(['MejoraContinua','itil1','itil2','itil3','itil4'])">ITILv3</td>
+    <td class="tg-5xqe" id="ITILv3">ITILv3</td>
     <td class="tg-5xqe"></td>
     <td class="tg-5xqe"></td>
     <td class="tg-5xqe"></td>
@@ -280,6 +280,12 @@ function desasociar(array){
   $("#HEspecificacion").tipsy({gravity:'s',opacity:1,html:true,
       title: function() {
         tooltp =("<h3>Hojas de Especificación</h3><p>Deben evaluar los recursos necesarios para ofrecer el servicio requerido con un nivel de calidad suficiente y determinar si es necesario el outsourcing de determinados procesos, sirviendo de documento de base para la elaboración de los OLAs y UCs</p>");
+        return tooltp
+      }
+  });
+  $("#SQP").tipsy({gravity:'s',opacity:1,html:true,
+      title: function() {
+        tooltp =("<h3>Programa de Calidad del Servicio:</h3><p>Debe contener la información necesaria para que la organización TI conozca los procesos y procedimientos involucrados en el suministro de los servicios prestados, asegurando que estos se alineen con los procesos de negocio y mantengan unos niveles de calidad adecuados</p><ul><li>Objetivos de cada servicio</li></ul><ul><li>Estimación de recursos</li></ul><ul><li>Indicadores clave de rendimiento</li></ul><ul><li>Procedimientos de monitorización de proveedores</li></ul>");
         return tooltp
       }
   });
