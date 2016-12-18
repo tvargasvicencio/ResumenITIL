@@ -63,13 +63,13 @@
   </tr>
   <tr>
     <td class="tg-j0tj">Administración de la Demanda</td>
-    <td class="tg-j0tj" id="GCapacidad">Administración de la Capacidad</td>
+    <td class="tg-j0tj" id="GCapacidad" onmouseover="asociar(['CDB','RFC'])" onmouseout="desasociar(['CDB','RFC'])">Administración de la Capacidad</td>
     <td class="tg-j0tj" id="GVersiones">Administración de Liberaciones y Distribución</td>
     <td class="tg-j0tj" id="GProblemas">Administración de Problemas</td>
   </tr>
   <tr>
     <td class="tg-baqh">Administración del Portafolio Servicios</td>
-    <td class="tg-baqh" id="GDisponibilidad">Administración de la Disponibilidad</td>
+    <td class="tg-baqh" id="GDisponibilidad" onmouseover="asociar(['SLA','OLA','UC'])" onmouseout="desasociar(['SLA','OLA','UC'])">Administración de la Disponibilidad</td>
     <td class="tg-baqh" id="GConfiguracion">Activos del Servicio y Administración de Configuraciones</td>
     <td class="tg-baqh" id="GIncidentes">Administración de Incidentes</td>
   </tr>
@@ -99,7 +99,7 @@
     <td class="tg-5xqe" id="CMDB">CMDB</td>
     <td class="tg-5xqe" id="DSL">DSL</td>
     <td class="tg-5xqe" id="DHS">DHS</td>
-    <td class="tg-5xqe" id="CDB">CDB</td>
+    <td class="tg-5xqe" id="CDB" onmouseover="asociar(['GCapacidad'])" onmouseout="desasociar(['GCapacidad'])">CDB</td>
   </tr>
   <tr>
     <td class="tg-5xqe" id="RFC">RFC</td>
@@ -111,9 +111,9 @@
     <td class="tg-5xqe" id="SLR" onmouseover="asociar(['GNivelServicio'])" onmouseout="desasociar(['GNivelServicio'])">SLR</td>
     <td class="tg-5xqe" id="HEspecificacion" onmouseover="asociar(['GNivelServicio','OLA','UC'])" onmouseout="desasociar(['GNivelServicio','OLA','UC'])">Hojas de especificación</td>
     <td class="tg-5xqe" id="SQP" onmouseover="asociar(['GNivelServicio'])" onmouseout="desasociar(['GNivelServicio'])">SQP</td>
-    <td class="tg-5xqe" id='SLA' onmouseover="asociar(['GNivelServicio'])" onmouseout="desasociar(['GNivelServicio'])">SLA</td>
-    <td class="tg-5xqe" id="OLA" onmouseover="asociar(['GNivelServicio'])" onmouseout="desasociar(['GNivelServicio'])">OLA</td>
-    <td class="tg-5xqe" id="UC" onmouseover="asociar(['GNivelServicio'])" onmouseout="desasociar(['GNivelServicio'])">UC</td>
+    <td class="tg-5xqe" id='SLA' onmouseover="asociar(['GNivelServicio','GDisponibilidad'])" onmouseout="desasociar(['GNivelServicio','GDisponibilidad'])">SLA</td>
+    <td class="tg-5xqe" id="OLA" onmouseover="asociar(['GNivelServicio','GDisponibilidad'])" onmouseout="desasociar(['GNivelServicio','GDisponibilidad'])">OLA</td>
+    <td class="tg-5xqe" id="UC" onmouseover="asociar(['GNivelServicio','GDisponibilidad'])" onmouseout="desasociar(['GNivelServicio','GDisponibilidad'])">UC</td>
     <td class="tg-5xqe" id="SIP" onmouseover="asociar(['GNivelServicio','SLA'])" onmouseout="desasociar(['GNivelServicio','SLA'])">SIP</td>
   </tr>
   <tr>
