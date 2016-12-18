@@ -86,7 +86,7 @@
     <td class="tg-y7d2">Operación del Servicio</td>
   </tr>
   <tr>
-    <td class="tg-f6td" colspan="4">Mejora Continua del Servicio</td>
+    <td class="tg-f6td" colspan="4" id="MejoraContinua">Mejora Continua del Servicio</td>
   </tr>
   <tr>
     <td class="tg-5xqe"></td>
@@ -111,12 +111,33 @@
     <td class="tg-5xqe">SLR</td>
     <td class="tg-5xqe">Hojas de especificación</td>
     <td class="tg-5xqe">SQP</td>
-    <td class="tg-5xqe">SLA</td>
+    <td class="tg-5xqe" id='SLA'>SLA</td>
     <td class="tg-5xqe">OLA</td>
     <td class="tg-5xqe">UC</td>
     <td class="tg-5xqe">SIP</td>
   </tr>
+  <tr>
+    <td class="tg-5xqe"></td>
+    <td class="tg-5xqe"></td>
+    <td class="tg-5xqe"></td>
+    <td class="tg-5xqe"></td>
+    <td class="tg-5xqe"></td>
+    <td class="tg-5xqe"></td>
+    <td class="tg-5xqe"></td>
+  </tr>
+  <tr>
+    <td class="tg-5xqe"></td>
+    <td class="tg-5xqe"></td>
+    <td class="tg-5xqe"></td>
+    <td class="tg-5xqe"></td>
+    <td class="tg-5xqe"></td>
+    <td class="tg-5xqe"></td>
+    <td class="tg-5xqe"></td>
+  </tr>
 </table>
+<div id="spaceDown">
+
+</div>
 </div>
   </body>
 <script type="text/javascript">
@@ -219,6 +240,24 @@
   $("#CDB").tipsy({gravity:'s',opacity:1,html:true, 
       title: function() {
         tooltp =("<h3>Base de Datos de Capacidad:</h3><p>Base de datos en la que se registra:</p><ul><li>Planes de capacidad</li></ul><ul><li>Auditorías de Capacidad</li></ul><ul><li>Informes de rendimiento</li></ul>");
+        return tooltp
+      }
+  });
+  $("#MejoraContinua").tipsy({gravity:'s',opacity:1,html:true,
+      title: function() {
+        tooltp =("<h3>Mejora Continua del Servicio</h3><p>Corregir problemas derivados del incumplimiento de SLA</p><p>Proponer posibles mejoras al servicio</p><p>Apoyo para la renovación de los SLA</p><p>1.-Realizar una pausa, 2.-Revisar qué se quiere, qué se debe y qué se puede implantar, 4.- Plasmar en una hoja de ruta lo que se quiere implantar, 5.-Ejecutar el plan como un proyecto formal de la organización<p>");
+        return tooltp
+      }
+  });
+  $("#SLA").tipsy({gravity:'s',opacity:1,html:true,
+      title: function() {
+        tooltp =("<h3>SLA</h3><p>El SLA debe recoger en un lenguaje no técnico, o cuando menos comprensible para el cliente, todos los detalles de los servicios brindados.</p><p>Tras su firma, el SLA debe considerarse el documento de referencia para la relación con el cliente en todo lo que respecta a la provisión de los servicios acordados, por tanto, es imprescindible que contenga claramente definidos los aspectos esenciales del servicio tales como su descripción, disponibilidad, niveles de calidad, tiempos de recuperación, etc.</p>");
+        return tooltp
+      }
+  });
+  $("#FormatoTipo").tipsy({gravity:'s',opacity:1,html:true,
+      title: function() {
+        tooltp =("<h3>Titulo</h3>");
         return tooltp
       }
   });
