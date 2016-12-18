@@ -114,7 +114,7 @@
     <td class="tg-5xqe" id='SLA' onmouseover="asociar(['GNivelServicio'])" onmouseout="desasociar(['GNivelServicio'])">SLA</td>
     <td class="tg-5xqe" id="OLA" onmouseover="asociar(['GNivelServicio'])" onmouseout="desasociar(['GNivelServicio'])">OLA</td>
     <td class="tg-5xqe" id="UC" onmouseover="asociar(['GNivelServicio'])" onmouseout="desasociar(['GNivelServicio'])">UC</td>
-    <td class="tg-5xqe" id="SIP" onmouseover="asociar(['GNivelServicio'])" onmouseout="desasociar(['GNivelServicio'])">SIP</td>
+    <td class="tg-5xqe" id="SIP" onmouseover="asociar(['GNivelServicio'])" onmouseout="desasociar(['GNivelServicio','SLA'])">SIP</td>
   </tr>
   <tr>
     <td class="tg-5xqe" id="ITIL" onmouseover="asociar(['MejoraContinua','itil1','itil2','itil3','itil4'])" onmouseout="desasociar(['MejoraContinua','itil1','itil2','itil3','itil4'])">ITIL</td>
@@ -292,6 +292,18 @@ function desasociar(array){
   $("#OLA").tipsy({gravity:'s',opacity:1,html:true,
       title: function() {
         tooltp =("<h3>Acuerdo de Nivel de Operación:</h3><p>Es un documento interno de la organización donde se especifican las responsabilidades y compromisos de los diferentes departamentos de la organización TI en la prestación de un determinado servicio</p>");
+        return tooltp
+      }
+  });
+  $("#UC").tipsy({gravity:'s',opacity:1,html:true,
+      title: function() {
+        tooltp =("<h3>Contratos de Soporte:</h3><p>Es un acuerdo con un proveedor externo para la prestación de servicios no cubiertos por la propia organización TI</p>");
+        return tooltp
+      }
+  });
+  $("#SIP").tipsy({gravity:'s',opacity:1,html:true,
+      title: function() {
+        tooltp =("<h3>Programa de Mejora del Servicio</h3><p>Debe recoger tanto medidas correctivas a fallos detectados en los niveles de servicio como propuestas de mejora basadas en el avance de la tecnología</p>");
         return tooltp
       }
   });
