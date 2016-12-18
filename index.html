@@ -109,7 +109,7 @@
   </tr>
   <tr>
     <td class="tg-5xqe" id="SLR" onmouseover="asociar(['GNivelServicio'])" onmouseout="desasociar(['GNivelServicio'])">SLR</td>
-    <td class="tg-5xqe" id="HEspecificacion" onmouseover="asociar(['GNivelServicio'])" onmouseout="desasociar(['GNivelServicio'])">Hojas de especificación</td>
+    <td class="tg-5xqe" id="HEspecificacion" onmouseover="asociar(['GNivelServicio'])" onmouseout="desasociar(['GNivelServicio','OLA','UC'])">Hojas de especificación</td>
     <td class="tg-5xqe" id="SQP" onmouseover="asociar(['GNivelServicio'])" onmouseout="desasociar(['GNivelServicio'])">SQP</td>
     <td class="tg-5xqe" id='SLA' onmouseover="asociar(['GNivelServicio'])" onmouseout="desasociar(['GNivelServicio'])">SLA</td>
     <td class="tg-5xqe" id="OLA" onmouseover="asociar(['GNivelServicio'])" onmouseout="desasociar(['GNivelServicio'])">OLA</td>
@@ -274,6 +274,12 @@ function desasociar(array){
   $("#SLR").tipsy({gravity:'s',opacity:1,html:true,
       title: function() {
         tooltp =("<h3>Requisitos de Nivel de Servicio</h3><ul><li>El SLR debe incluir información detallada sobre las necesidades del cliente y sus expectativas de rendimiento y nivel de servicios</li></ul><ul><li>El SLR constituye el elemento base para desarrollar el SLA y posibles OLAs correspondientes</li></ul>");
+        return tooltp
+      }
+  });
+  $("#HEspecificacion").tipsy({gravity:'s',opacity:1,html:true,
+      title: function() {
+        tooltp =("<h3>Hojas de Especificación</h3><p>Deben evaluar los recursos necesarios para ofrecer el servicio requerido con un nivel de calidad suficiente y determinar si es necesario el outsourcing de determinados procesos, sirviendo de documento de base para la elaboración de los OLAs y UCs</p>");
         return tooltp
       }
   });
