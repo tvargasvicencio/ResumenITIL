@@ -65,19 +65,19 @@
     <td class="tg-j0tj">Administración de la Demanda</td>
     <td class="tg-j0tj" id="GCapacidad" onmouseover="asociar(['CDB','RFC'])" onmouseout="desasociar(['CDB','RFC'])">Administración de la Capacidad</td>
     <td class="tg-j0tj" id="GVersiones" onmouseover="asociar(['CMDB','DSL','DHS','Roll-Out','Back-Out'])" onmouseout="desasociar(['CMDB','DSL','DHS','Roll-Out','Back-Out'])">Administración de Liberaciones y Distribución</td>
-    <td class="tg-j0tj" id="GProblemas">Administración de Problemas</td>
+    <td class="tg-j0tj" id="GProblemas" onmouseover="asociar(['RFC'])" onmouseout="desasociar(['RFC'])">Administración de Problemas</td>
   </tr>
   <tr>
     <td class="tg-baqh">Administración del Portafolio Servicios</td>
     <td class="tg-baqh" id="GDisponibilidad" onmouseover="asociar(['SLA','OLA','UC'])" onmouseout="desasociar(['SLA','OLA','UC'])">Administración de la Disponibilidad</td>
-    <td class="tg-baqh" id="GConfiguracion">Activos del Servicio y Administración de Configuraciones</td>
-    <td class="tg-baqh" id="GIncidentes">Administración de Incidentes</td>
+    <td class="tg-baqh" id="GConfiguracion" onmouseover="asociar(['CMDB','SLA','OLA','GCambio','RFC','GIncidentes','GProblemas'])" onmouseout="desasociar(['CMDB','SLA','OLA','GCambio','RFC','GIncidentes','GProblemas'])">Activos del Servicio y Administración de Configuraciones</td>
+    <td class="tg-baqh" id="GIncidentes" onmouseover="asociar(['RFC','KB'])" onmouseout="desasociar(['RFC','KB'])">Administración de Incidentes</td>
   </tr>
   <tr>
     <td class="tg-j0tj" id="GFinanciera">Administración Financiera TI</td>
     <td class="tg-j0tj" id="GNivelServicio" onmouseover="asociar(['OLA','SLA'])" onmouseout="desasociar(['OLA','SLA'])">Administración de Niveles Servicio</td>
-    <td class="tg-j0tj" id="GCambio">Administración de Cambios</td>
-    <td class="tg-j0tj" id="CentroServicios">Mesa de Servicios</td>
+    <td class="tg-j0tj" id="GCambio" onmouseover="asociar(['GConfiguracion','RFC','Roll-Out','Back-Out'])" onmouseout="desasociar(['GConfiguracion','RFC','Roll-Out','Back-Out'])">Administración de Cambios</td>
+    <td class="tg-j0tj" id="CentroServicios" onmouseover="asociar(['GProblemas','GConfiguracion','GCambio','GVersiones','SLA'])" onmouseout="desasociar(['GProblemas','GConfiguracion','GCambio','GVersiones','SLA'])">Mesa de Servicios</td>
   </tr>
   <tr>
     <td class="tg-zedv" id='itil1'>Estrategia del Servicio</td>
@@ -95,24 +95,24 @@
     <td class="tg-5xqe"></td>
   </tr>
   <tr>
-    <td class="tg-5xqe" id="KB">KB</td>
+    <td class="tg-5xqe" id="KB" onmouseover="asociar(['GIncidentes'])" onmouseout="desasociar(['GIncidentes'])">KB</td>
     <td class="tg-5xqe" id="CMDB" onmouseover="asociar(['GVersiones'])" onmouseout="desasociar(['GVersiones'])">CMDB</td>
     <td class="tg-5xqe" id="DSL" onmouseover="asociar(['GVersiones'])" onmouseout="desasociar(['GVersiones'])">DSL</td>
     <td class="tg-5xqe" id="DHS" onmouseover="asociar(['GVersiones'])" onmouseout="desasociar(['GVersiones'])">DHS</td>
     <td class="tg-5xqe" id="CDB" onmouseover="asociar(['GCapacidad'])" onmouseout="desasociar(['GCapacidad'])">CDB</td>
   </tr>
   <tr>
-    <td class="tg-5xqe" id="RFC">RFC</td>
-    <td class="tg-5xqe" id="Roll-Out">Roll-Out</td>
-    <td class="tg-5xqe" id="Back-Out">Back-Out</td>
+    <td class="tg-5xqe" id="RFC" onmouseover="asociar(['GCambio'])" onmouseout="desasociar(['GCambio','GProblemas'])">RFC</td>
+    <td class="tg-5xqe" id="Roll-Out" onmouseover="asociar(['GCambio'])" onmouseout="desasociar(['GCambio'])">Roll-Out</td>
+    <td class="tg-5xqe" id="Back-Out" onmouseover="asociar(['GCambio'])" onmouseout="desasociar(['GCambio'])">Back-Out</td>
     <td class="tg-5xqe"></td>
   </tr>
   <tr>
     <td class="tg-5xqe" id="SLR" onmouseover="asociar(['GNivelServicio'])" onmouseout="desasociar(['GNivelServicio'])">SLR</td>
     <td class="tg-5xqe" id="HEspecificacion" onmouseover="asociar(['GNivelServicio','OLA','UC'])" onmouseout="desasociar(['GNivelServicio','OLA','UC'])">Hojas de especificación</td>
     <td class="tg-5xqe" id="SQP" onmouseover="asociar(['GNivelServicio'])" onmouseout="desasociar(['GNivelServicio'])">SQP</td>
-    <td class="tg-5xqe" id='SLA' onmouseover="asociar(['GNivelServicio','GDisponibilidad'])" onmouseout="desasociar(['GNivelServicio','GDisponibilidad'])">SLA</td>
-    <td class="tg-5xqe" id="OLA" onmouseover="asociar(['GNivelServicio','GDisponibilidad'])" onmouseout="desasociar(['GNivelServicio','GDisponibilidad'])">OLA</td>
+    <td class="tg-5xqe" id='SLA' onmouseover="asociar(['GNivelServicio','GDisponibilidad','GConfiguracion'])" onmouseout="desasociar(['GNivelServicio','GDisponibilidad','GConfiguracion'])">SLA</td>
+    <td class="tg-5xqe" id="OLA" onmouseover="asociar(['GNivelServicio','GDisponibilidad','GConfiguracion'])" onmouseout="desasociar(['GNivelServicio','GDisponibilidad','GConfiguracion'])">OLA</td>
     <td class="tg-5xqe" id="UC" onmouseover="asociar(['GNivelServicio','GDisponibilidad'])" onmouseout="desasociar(['GNivelServicio','GDisponibilidad'])">UC</td>
     <td class="tg-5xqe" id="SIP" onmouseover="asociar(['GNivelServicio','SLA'])" onmouseout="desasociar(['GNivelServicio','SLA'])">SIP</td>
   </tr>
@@ -159,7 +159,7 @@ function desasociar(array){
 }
   $("#CentroServicios").tipsy({gravity:'s',opacity:1,html:true,
       title: function() {
-        tooltp =("<h3>Centro de Servicios</h3><p>Centro neurálgico de todos los procesos de soporte al servicio:</p><ul><li>Registrar y monitorizar incidentes</li></ul><ul><li>Aplicar soluciones temporales a errores conocidos en colaboración con la gestión de problemas</li></ul><ul><li>Colaborar con la Gestión de Configuraciones para la actualización de la CMDB</li></ul><ul><li>Gestionar cambios solicitados vía peticiones de servicio en colaboración con la gestión de Cambios y Versiones</li></ul>");
+        tooltp =("<h3>Centro de Servicios</h3><p>Punto de contacto entre los usuarios y la Gestión de Servicios TI. Centro neurálgico de todos los procesos de soporte al servicio:</p><ul><li>Registrar y monitorizar incidentes</li></ul><ul><li>Aplicar soluciones temporales a errores conocidos en colaboración con la gestión de problemas</li></ul><ul><li>Colaborar con la Gestión de Configuraciones para la actualización de la CMDB</li></ul><ul><li>Gestionar cambios solicitados vía peticiones de servicio en colaboración con la gestión de Cambios y Versiones</li></ul>");
         return tooltp
       }
   });
@@ -322,6 +322,24 @@ function desasociar(array){
   $("#ITILv3").tipsy({gravity:$.fn.tipsy.autoNS,opacity:1,html:true,
       title: function() {
         tooltp =("<h3>ITILv3</h3><p>Conjunto de 5 libros</p><ol><li>Estrategia de servicios</li><li>Diseño de servicios</li><li>Transición de servicios</li><li>Operación de servicios</li><li>Mejora continua de servicio</li></ol>");
+        return tooltp
+      }
+  });
+  $("#RFC").tipsy({gravity:'s',opacity:1,html:true,
+      title: function() {
+        tooltp =("<h3>Request For Change</h3><p>Puede ser producto de:</p><ul><li>Corrección de errores</li></ul><ul><li>Innovación y mejora de los servicios</li></ul><ul><li>Cumplimiento de nuevas normativas</li></ul>");
+        return tooltp
+      }
+  });
+  $("#Roll-Out").tipsy({gravity:'s',opacity:1,html:true,
+      title: function() {
+        tooltp =("<h3>Roll-Out</h3><p>Implementación del RFC, debe considerar:</p><ul><li>Entorno de Desarrollo</li></ul><ul><li>Entorno de Pruebas</li></ul><ul><li>Implementación (codificación y testeo)</li></ul>");
+        return tooltp
+      }
+  });
+  $("#Back-Out").tipsy({gravity:'s',opacity:1,html:true,
+      title: function() {
+        tooltp =("<h3>Back-Out</h3><p>En caso que la liberación del RFC genere problemas, se retira el componente modificado y se vuelve a una versión funcional, considerando:</p><ul><li>Volver al último estado estable anterior en el menor tiempo posible</li></ul><ul><li>Impedir que se pierdan datos e información durante el proceso</li></ul>");
         return tooltp
       }
   });
