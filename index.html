@@ -109,12 +109,12 @@
   </tr>
   <tr>
     <td class="tg-5xqe" id="SLR" onmouseover="asociar(['GNivelServicio'])" onmouseout="desasociar(['GNivelServicio'])">SLR</td>
-    <td class="tg-5xqe" id="HEspecificacion" onmouseover="asociar(['GNivelServicio'])" onmouseout="desasociar(['GNivelServicio','OLA','UC'])">Hojas de especificación</td>
+    <td class="tg-5xqe" id="HEspecificacion" onmouseover="asociar(['GNivelServicio','OLA','UC'])" onmouseout="desasociar(['GNivelServicio','OLA','UC'])">Hojas de especificación</td>
     <td class="tg-5xqe" id="SQP" onmouseover="asociar(['GNivelServicio'])" onmouseout="desasociar(['GNivelServicio'])">SQP</td>
     <td class="tg-5xqe" id='SLA' onmouseover="asociar(['GNivelServicio'])" onmouseout="desasociar(['GNivelServicio'])">SLA</td>
     <td class="tg-5xqe" id="OLA" onmouseover="asociar(['GNivelServicio'])" onmouseout="desasociar(['GNivelServicio'])">OLA</td>
     <td class="tg-5xqe" id="UC" onmouseover="asociar(['GNivelServicio'])" onmouseout="desasociar(['GNivelServicio'])">UC</td>
-    <td class="tg-5xqe" id="SIP" onmouseover="asociar(['GNivelServicio'])" onmouseout="desasociar(['GNivelServicio','SLA'])">SIP</td>
+    <td class="tg-5xqe" id="SIP" onmouseover="asociar(['GNivelServicio','SLA'])" onmouseout="desasociar(['GNivelServicio','SLA'])">SIP</td>
   </tr>
   <tr>
     <td class="tg-5xqe" id="ITIL" onmouseover="asociar(['MejoraContinua','itil1','itil2','itil3','itil4'])" onmouseout="desasociar(['MejoraContinua','itil1','itil2','itil3','itil4'])">ITIL</td>
@@ -303,7 +303,7 @@ function desasociar(array){
   });
   $("#SIP").tipsy({gravity:'s',opacity:1,html:true,
       title: function() {
-        tooltp =("<h3>Programa de Mejora del Servicio</h3><p>Debe recoger tanto medidas correctivas a fallos detectados en los niveles de servicio como propuestas de mejora basadas en el avance de la tecnología</p>");
+        tooltp =("<h3>Programa de Mejora del Servicio</h3><p>Debe recoger tanto medidas correctivas a fallos detectados en los niveles de servicio como propuestas de mejora basadas en el avance de la tecnología.</p><br><p>Debe formar parte de la documentación de base para la renovación de los SLAs y debe estar internamente a disposición de los gestores de los otros procesos TI</p>");
         return tooltp
       }
   });
