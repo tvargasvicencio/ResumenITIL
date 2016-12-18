@@ -86,7 +86,7 @@
     <td class="tg-y7d2">Operación del Servicio</td>
   </tr>
   <tr>
-    <td class="tg-f6td" colspan="4">Mejora Continua del Servicio</td>
+    <td class="tg-f6td" colspan="4" id="MejoraContinua">Mejora Continua del Servicio</td>
   </tr>
   <tr>
     <td class="tg-5xqe"></td>
@@ -120,105 +120,111 @@
 </div>
   </body>
 <script type="text/javascript">
-  $("#CentroServicios").tipsy({gravity:$.fn.tipsy.autoNS,opacity:1,html:true, 
+  $("#CentroServicios").tipsy({gravity:$.fn.tipsy.autoNS,opacity:1,html:true,
       title: function() {
         tooltp =("<h3>Centro de Servicios</h3><p>Centro neurálgico de todos los procesos de soporte al servicio:</p><ul><li>Registrar y monitorizar incidentes</li></ul><ul><li>Aplicar soluciones temporales a errores conocidos en colaboración con la gestión de problemas</li></ul><ul><li>Colaborar con la Gestión de Configuraciones para la actualización de la CMDB</li></ul><ul><li>Gestionar cambios solicitados vía peticiones de servicio en colaboración con la gestión de Cambios y Versiones</li></ul>");
         return tooltp
       }
   });
-  $("#GIncidentes").tipsy({gravity:$.fn.tipsy.autoNS,opacity:1,html:true, 
+  $("#GIncidentes").tipsy({gravity:$.fn.tipsy.autoNS,opacity:1,html:true,
       title: function() {
         tooltp =("<h3>Gestion de Incidentes:</h3><p>Tiene como objetivo resolver cualquier incidente que cause una interrupción en el servicio, de la manera más rápida y eficaz posible.<br> La gestión de incidentes no debe confundirse con la Gestión de Problemas, ya que esta no se preocupa de encontrar y analizar las causas subyacentes a un determinado incidente, sino exclusivamente a restaurar el servicio.</p>");
         return tooltp
       }
   });
-  $("#GProblemas").tipsy({gravity:$.fn.tipsy.autoNS,opacity:1,html:true, 
+  $("#GProblemas").tipsy({gravity:$.fn.tipsy.autoNS,opacity:1,html:true,
       title: function() {
         tooltp =("<h3>Gestión de Problemas:</h3><p>Proceso responsable de identificar la causa raíz de los incidentes para evitar su repetición y minimizar el impacto sobre las operaciones del negocio</p><ul><li>Investigar causas subyacentes a toda alteración, real o potencial del servicio TI</li></ul><ul><li>Determinar posibles soluciones</li></ul><ul><li>Proponer las repeticiones de cambio (RFC)</li></ul><ul><li>Realizar revisiones Post Implementación (PIR) en colaboración con la Gestión de Cambios</li></ul>");
         return tooltp
       }
   });
-  $("#GCambio").tipsy({gravity:$.fn.tipsy.autoNS,opacity:1,html:true, 
+  $("#GCambio").tipsy({gravity:$.fn.tipsy.autoNS,opacity:1,html:true,
       title: function() {
         tooltp =("<h3>Gestión de Cambios:</h3><p>Garantiza el uso de métodos estandarizados para la realización de cambios en la infraestructura, minimizando así el impacto de los incidentes relacionados con dichos cambios:</p><ul><li>Evaluar el impacto de los posibles cambios sobre la infraestructura TI</li></ul><ul><li>Tramitar los cambios mediante procesos y procedimientos estandarizados y consistentes</li></ul><ul><li>Revisar, junto a la Gestión de Problemas y los usuarios, los resultados Post Implementación (PIR)</li></ul>");
         return tooltp
       }
   });
-  $("#GVersiones").tipsy({gravity:$.fn.tipsy.autoNS,opacity:1,html:true, 
+  $("#GVersiones").tipsy({gravity:$.fn.tipsy.autoNS,opacity:1,html:true,
       title: function() {
         tooltp =("<h3>Gestión de Versiones:</h3><p>Permite una visión integral de los cambios para asegurar que en su implantación se hagan las pruebas necesarias y se consideren tanto los aspectos técnicos como los no técnicos de la liberación. Tiene como principales funciones:</p><ul><li>Implementar los cambios</li></ul><ul><li>Llevar a cabo reparaciones de emergencia</li></ul><ul><li>Desarrollar planes de roll-out y back-out</li></ul>");
         return tooltp
       }
   });
-  $("#GConfiguracion").tipsy({gravity:$.fn.tipsy.autoNS,opacity:1,html:true, 
+  $("#GConfiguracion").tipsy({gravity:$.fn.tipsy.autoNS,opacity:1,html:true,
       title: function() {
         tooltp =("<h3>Gestión de la Configuración:</h3><p>Tiene como funciones principales:</p><ul><li>Llevar el control de todos los elementos de configuración de infraestructura TI</li></ul><ul><li>Realizar auditorías periódicas de configuración</li></ul><ul><li>Proporcionar información precisa sobre configuración TI a todos los diferentes procesos de gestión</li></ul>");
         return tooltp
       }
   });
-  $("#GNivelServicio").tipsy({gravity:$.fn.tipsy.autoNS,opacity:1,html:true, 
+  $("#GNivelServicio").tipsy({gravity:$.fn.tipsy.autoNS,opacity:1,html:true,
       title: function() {
         tooltp =("<h3>Gestión de Nivel de Servicio:</h3><p>Es la encargada de definir los servicios TI prestados y formalizarlos en términos de Acuerdo de Nivel de Servicio (SLA) y Acuerdo de Nivel Operativo (OLA) que consideren las necesidades de los clientes y los costos asociados<br><br>Proceso encargado de mantener y mejorar la calidad de los servicios de TI mediante la definición, monitoreo y reporte de los Niveles de Servicio</p>");
         return tooltp
       }
   });
-  $("#GDisponibilidad").tipsy({gravity:$.fn.tipsy.autoNS,opacity:1,html:true, 
+  $("#GDisponibilidad").tipsy({gravity:$.fn.tipsy.autoNS,opacity:1,html:true,
       title: function() {
         tooltp =("<h3>Gestión de la Disponibilidad:</h3><p>Permite ofrecer un nivel de disponibilidad sostenido en los servicios de TI, con un costo adecuado para que el negocio pueda alcanzar sus objetivos:</p><ul><li>STI estén disponibles siempre que se soliciten</li></ul><ul><li>Sean fiables y tengan un margen operativo</li></ul><ul><li>Estén correctamente mantenidos</li></ul>");
         return tooltp
       }
   });
-  $("#GCapacidad").tipsy({gravity:$.fn.tipsy.autoNS,opacity:1,html:true, 
+  $("#GCapacidad").tipsy({gravity:$.fn.tipsy.autoNS,opacity:1,html:true,
       title: function() {
         tooltp =("<h3>Gestión de la Capacidad:</h3><p>Proceso que asegura que la capacidad de los recursos de TI sea suficiente para cumplir las necesidades presentes y futuras del negocio, siempre a un costo adecuado</p><ul><li>Elaborar planes de capacidad</li></ul><ul><li>Monitorizar el rendimiento de la infraestructura TI</li></ul><ul><li>Realizar simulaciones de requisitos de capacidad para diferentes escenarios</li></ul>");
         return tooltp
       }
   });
-  $("#GFinanciera").tipsy({gravity:$.fn.tipsy.autoNS,opacity:1,html:true, 
+  $("#GFinanciera").tipsy({gravity:$.fn.tipsy.autoNS,opacity:1,html:true,
       title: function() {
         tooltp =("<h3>Gestión Financiera:</h3><p>Provee guías para la utilización eficiente, en cuanto a costos, de los recursos de TI</p><ul><li>Medir relación calidad/costo</li></ul><ul><li>Tomar medidas correctoras al respecto para ofrecer buenos servicios a precios razonables</li></ul>");
         return tooltp
       }
   });
-  $("#GContinuidad").tipsy({gravity:$.fn.tipsy.autoNS,opacity:1,html:true, 
+  $("#GContinuidad").tipsy({gravity:$.fn.tipsy.autoNS,opacity:1,html:true,
       title: function() {
         tooltp =("<h3>Gestión de la Continuidad:</h3><p>Proceso que permite la continuidad de los servicios de TI para que, en caso de un desastre, se recuperen dentro de los tiempos y costos acordados</p><ul><li>Evaluar los riesgos que ponen en peligro la continuidad del servicio</li></ul><ul><li>Elaborar panes de contingencia</li></ul><ul><li>Recuperar rápidamente servicios tras fallos graves en la infraestructura o desastres naturales</li></ul>");
         return tooltp
       }
   });
-  $("#CatalogoServicios").tipsy({gravity:$.fn.tipsy.autoNS,opacity:1,html:true, 
+  $("#CatalogoServicios").tipsy({gravity:$.fn.tipsy.autoNS,opacity:1,html:true,
       title: function() {
         tooltp =("<h3>Catálogo de Servicios:</h3><ul><li>Describir el servicio considerando los SLA ofrecidos</li></ul><ul><li>Un nuevo servicio actualizará la planificación de la Gestión de Niveles de Servicio</li></ul>");
         return tooltp
       }
   });
-  $("#KB").tipsy({gravity:$.fn.tipsy.autoNS,opacity:1,html:true, 
+  $("#KB").tipsy({gravity:$.fn.tipsy.autoNS,opacity:1,html:true,
       title: function() {
         tooltp =("<h3>Base de Conocimiento:</h3><p>Debe recoger toda la información necesaria para:</p><ul><li>Ofrecer una primera línea de soporte ágil y eficaz sin necesidad de recurrir a escalados</li></ul><ul><li>Realizar una tarea comercial y de soporte al negocio</li></ul>");
         return tooltp
       }
   });
-  $("#CMDB").tipsy({gravity:$.fn.tipsy.autoNS,opacity:1,html:true, 
+  $("#CMDB").tipsy({gravity:$.fn.tipsy.autoNS,opacity:1,html:true,
       title: function() {
         tooltp =("<h3>Base de Datos de Configuraciones:</h3><ul><li>Información detallada de cada elemento de configuración (CI) (Lógico y Físico)</li></ul><ul><li>Interrelaciones entre diferentes elementos de configuración. Ej: Dependencias lógicas o físicas</li></ul>");
         return tooltp
       }
   });
-  $("#DSL").tipsy({gravity:$.fn.tipsy.autoNS,opacity:1,html:true, 
+  $("#DSL").tipsy({gravity:$.fn.tipsy.autoNS,opacity:1,html:true,
       title: function() {
         tooltp =("<h3>Biblioteca de Software Definitivo:</h3><p>Debe contener copia de todo el software instalado en el entorno TI. Incluye SO, App y controladores de dispositivos y documentación asociada</p><ul><li>Debe contener el histórico completo de versiones de un mismo software para proporcionar la versión necesaria en caso de que se deban implementar los planes de back-out</li></ul><ul><li>Debe ser almacenada en un entorno seguro y es conveniente que se realicen back-up periódicos</li></ul>");
         return tooltp
       }
   });
-  $("#DHS").tipsy({gravity:$.fn.tipsy.autoNS,opacity:1,html:true, 
+  $("#DHS").tipsy({gravity:$.fn.tipsy.autoNS,opacity:1,html:true,
       title: function() {
         tooltp =("<h3>Depósito de Hardware Definitivo:</h3><p>Contiene piezas de repuesto para los CIs en el entorno de producción</p><br><br><p>Los activos almacenados deben incorporarse a la CMDB en e caso de que los CIs correspondientes se hallen registrados en la misma</p>");
         return tooltp
       }
   });
-  $("#CDB").tipsy({gravity:$.fn.tipsy.autoNS,opacity:1,html:true, 
+  $("#CDB").tipsy({gravity:$.fn.tipsy.autoNS,opacity:1,html:true,
       title: function() {
         tooltp =("<h3>Base de Datos de Capacidad:</h3><p>Base de datos en la que se registra:</p><ul><li>Planes de capacidad</li></ul><ul><li>Auditorías de Capacidad</li></ul><ul><li>Informes de rendimiento</li></ul>");
+        return tooltp
+      }
+  });
+  $("#MejoraContinua").tipsy({gravity:$.fn.tipsy.autoNS,opacity:1,html:true,
+      title: function() {
+        tooltp =("<h3>Mejora Continua del Servicio</h3><p>1.-Realizar una pausa, 2.-Revisar qué se quiere, qué se debe y qué se puede implantar, 4.- Plasmar en una hoja de ruta lo que se quiere implantar, 5.-Ejecutar el plan como un proyecto formal de la organización<p>");
         return tooltp
       }
   });
